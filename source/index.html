@@ -2,8 +2,263 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title></title>
+    <title>Портфолио лендинг</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
+  <body class="page">
+    <!-- Хэдер -->
+    <header class="header">
+      <nav class="main-nav">
+        <div class="logo-group">
+          <a class="main-nav__logo-link" href="/">
+            <img class="main-nav__logo" src="" alt="логотип." />
+          </a>
+          <a class="main-nav__brand-text" href="/"></a>
+        </div>
+        <!-- Кнопка открыть/закрыть меню -->
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Закрыть меню / Открыть меню.</span>
+          <div class="burger-button burger-button--closed">
+            <span class="burger-button__strip"></span>
+            <span class="burger-button__strip"></span>
+            <span class="burger-button__strip"></span>
+          </div>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="nav-list nav-list--closed">
+            <li class="nav-list__item">
+              <a class="main-nav__link link" href="">Обо мне</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="main-nav__link link" href="">Образование</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="main-nav__link link" href="">Портфолио</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="main-nav__link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <h1 class="hero__title">Профессиональная верстка сайта</h1>
+        <p class="hero__subtitle">
+          Верстаю как простые лендинги, так и сложные сайты
+        </p>
+        <button class="hero__button">Обсудить проект</button>
+        <div class="soc-media-info">
+          <span class="soc-media-info__description">E-mail</span>
+          <a class="soc-media-info__link">jerdew.r@icloud.com</a>
+        </div>
+        <div class="soc-media-info">
+          <span class="soc-media-info__description">GitHub</span>
+          <a class="soc-media-info__link">ZhRodion</a>
+        </div>
+      </section>
+      <section class="about-me">
+        <h2 class="about-me__title green-heading">Обо мне</h2>
+        <img class="about-me__photo" src="" alt="Моя фотография." />
+        <h3 class="about-me__content-title">
+          Меня зовут Жердев Родион, я верстальщик.
+        </h3>
+        <p class="about-me__subtitle">
+          Вы можете написать мне в любое время, на почту или в соц сетях,
+          и я обязательно вам отвечу. Всегда ответственно подхожу к любому
+          вопросу и разным мелочам, готов обсудить любые нюансы. Со мной всегда
+          можно договориться по выполнению работы и срокам, а также по цене.
+        </p>
+        <div class="about-info">
+          <b class="about-info__tagline">Имя:</b>
+          <span class="about-info__">Родион</span>
+          <b class="about-info__tagline">Город:</b>
+          <span>Брянск</span>
+          <b class="about-info__tagline">Возраст:</b>
+          <span>24</span>
+          <b class="about-info__tagline">E-mail:</b>
+          <a>jerdew.r@icloud.com</a>
+        </div>
+        <button class="about-me__button">Связаться</button>
+      </section>
+      <section class="advantages">
+        <h2 class="advantages__title">
+          Почему стоит выбрать меня как исполнителя?
+        </h2>
+        <ul class="advantages-points">
+          <li class="advantages-points__item">
+            <img class="advantages-points__icon" src="" alt="" />
+            <h3 class="advantages-points__title">Заказ в срок</h3>
+            <p class="advantages-points__subtitle">
+              Выполняю поставленные задачи согласно графику, техническому
+              заданию и точно в срок
+            </p>
+          </li>
+          <li class="advantages-points__item">
+            <img class="advantages-points__icon" src="" alt="" />
+            <h3 class="advantages-points__title">Всегда на связи</h3>
+            <p class="advantages-points__subtitle">
+              Отвечаю максимально быстро в любых удобных для вас мессенджерах
+            </p>
+          </li>
+          <li class="advantages-points__item">
+            <img class="advantages-points__icon" src="" alt="" />
+            <h3 class="advantages-points__title">Повышение квалификации</h3>
+            <p class="advantages-points__subtitle">
+              Постоянно изучаю новую информацию, совершенствую свои знания,
+              навыки и умения
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="skills">
+        <h2 class="skills-title">Мои скиллы</h2>
+        <ul class="skills-list">
+          <li class="skills-list__item">
+            <img class="skills-list__icon" src="" alt="" />
+            <h3 class="skills-list__title">HTML5</h3>
+            <p class="skills-list__subtitle">
+              Семантическая разметка кода Использование БЭМ
+            </p>
+          </li>
+          <li class="skills-list__item">
+            <img class="skills-list__icon" src="" alt="" />
+            <h3 class="skills-list__title">CSS3</h3>
+            <p class="skills-list__subtitle">
+              Стилизация элементов на странице
+            </p>
+          </li>
+          <li class="skills-list__item">
+            <img class="skills-list__icon" src="" alt="" />
+            <h3 class="skills-list__title">Java Script</h3>
+            <p class="skills-list__subtitle">
+              Подключение скриптов для динамичности страницы
+            </p>
+          </li>
+          <li class="skills-list__item">
+            <img class="skills-list__icon" src="" alt="" />
+            <h3 class="skills-list__title">БЭМ</h3>
+            <p class="skills-list__subtitle">
+              Компонентный подход к веб-разработке
+            </p>
+          </li>
+          <li class="skills-list__item">
+            <img class="skills-list__icon" src="" alt="" />
+            <h3 class="skills-list__title">Gulp</h3>
+            <p class="skills-list__subtitle">Быстрая компиляция файлов</p>
+          </li>
+          <li class="skills-list__item">
+            <img class="skills-list__icon" src="" alt="" />
+            <h3 class="skills-list__title">Sass</h3>
+            <p class="skills-list__subtitle">Быстрое написание стилей</p>
+          </li>
+          <li class="skills-list__item">
+            <img class="skills-list__icon" src="" alt="" />
+            <h3 class="skills-list__title">Git</h3>
+            <p class="skills-list__subtitle">
+              Система управления версиями с открытым исходным кодом
+            </p>
+          </li>
+          <li class="skills-list__item">
+            <img class="skills-list__icon" src="" alt="" />
+            <h3 class="skills-list__title">GitHub</h3>
+            <p class="skills-list__subtitle">
+              Веб-служба размещения для репозиториев Git
+            </p>
+          </li>
+          <li class="skills-list__item">
+            <img class="skills-list__icon" src="" alt="" />
+            <h3 class="skills-list__title">Figma</h3>
+            <p class="skills-list__subtitle">Верстка сайта по макету Figma</p>
+          </li>
+        </ul>
+      </section>
+      <section class="education">
+        <h2 class="education__title green-heading">Образование</h2>
+        <h3 class="education__heading">Выпускник HTML Academy</h3>
+        <ul class="eduction-list">
+          <li class="eduction-list__item">
+            <img class="eduction-list__icon" src="" alt="" />
+            <p class="eduction-list__text">«Основы Figma для верстальщика»</p>
+          </li>
+          <li class="eduction-list__item">
+            <img class="eduction-list__icon" src="" alt="" />
+            <p class="eduction-list__text">
+              «HTML и CSS. Профессиональная вёрстка сайтов»
+            </p>
+          </li>
+          <li class="eduction-list__item">
+            <img class="eduction-list__icon" src="" alt="" />
+            <p class="eduction-list__text">
+              «HTML и CSS. Адаптивная вёрстка и автоматизация #26»
+            </p>
+          </li>
+          <li class="eduction-list__item">
+            <img class="eduction-list__icon" src="" alt="" />
+            <p class="eduction-list__text">«Основы JavaScript»</p>
+          </li>
+        </ul>
+        <!-- Сертификаты -->
+        <h3 class="skills__heading">Мои сертификаты</h3>
+        <div class="slider"></div>
+      </section>
+      <section class="portfolio">
+        <ul class="portfolio-list">
+          <li class="portfolio-list__item">
+            <a class="portfolio-list__link">
+              <b class="portfolio-list__lead">Интернет-магазин “Ягода”</b>
+            </a>
+          </li>
+          <li class="portfolio-list__item">
+            <a class="portfolio-list__link">
+              <b class="portfolio-list__lead"
+                >Туристический промо-сайт “Sedona”</b
+              >
+            </a>
+          </li>
+          <li class="portfolio-list__item">
+            <a class="portfolio-list__link">
+              <b class="portfolio-list__lead">Промо-сайт “Sedona”</b>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__title"></h2>
+        <ul class="contacts-list">
+          <li class="contacts-list__item">
+            <p class="contacts-list__text">Почта</p>
+            <a class="contacts-list__link">
+              <img class="contacts-list__icon" src="" alt="" />
+            </a>
+          </li>
+          <li class="contacts-list__item">
+            <p class="contacts-list__text">Соц. сети</p>
+            <div class="soc-media-link-icons">
+              <a class="contacts-list__link">
+                <img class="contacts-list__icon" src="" alt="" />
+              </a>
+              <a class="contacts-list__link">
+                <img class="contacts-list__icon" src="" alt="" />
+              </a>
+              <a class="contacts-list__link">
+                <img class="contacts-list__icon" src="" alt="" />
+              </a>
+            </div>
+          </li>
+          <li class="contacts-list__item">
+            <p class="contacts-list__text">Фриланс</p>
+            <a class="contacts-list__link">
+              <img class="contacts-list__icon" src="" alt="" />
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <img class="page-footer__logo" src="" alt="" />
+    </footer>
+  </body>
 </html>
