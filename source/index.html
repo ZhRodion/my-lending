@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <title>Портфолио лендинг</title>
+    <title>my-portfolio</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -10,12 +10,13 @@
     <!-- Хэдер -->
     <header class="header">
       <nav class="main-nav">
-        <div class="logo-group">
-          <a class="main-nav__logo-link" href="/">
-            <img class="main-nav__logo" src="" alt="логотип." />
-          </a>
-          <a class="main-nav__brand-text" href="/"></a>
-        </div>
+        <a class="main-nav__logo-link" href="/">
+          <img
+            class="main-nav__logo"
+            src="./img/logo/logo-hed.svg"
+            alt="логотип."
+          />
+        </a>
         <!-- Кнопка открыть/закрыть меню -->
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Закрыть меню / Открыть меню.</span>
@@ -50,18 +51,35 @@
           Верстаю как простые лендинги, так и сложные сайты
         </p>
         <button class="hero__button">Обсудить проект</button>
-        <div class="soc-media-info">
-          <span class="soc-media-info__description">E-mail</span>
-          <a class="soc-media-info__link">jerdew.r@icloud.com</a>
-        </div>
-        <div class="soc-media-info">
-          <span class="soc-media-info__description">GitHub</span>
-          <a class="soc-media-info__link">ZhRodion</a>
+        <div class="social-group">
+          <div class="soc-media-info">
+            <span class="soc-media-info__description">E-mail</span>
+            <a
+              class="soc-media-info__link"
+              href="mailto:jerdew.r@icloud.com"
+              type="email"
+              target="_blank"
+              >jerdew.r@icloud.com</a
+            >
+          </div>
+          <div class="soc-media-info">
+            <span class="soc-media-info__description">GitHub</span>
+            <a
+              class="soc-media-info__link"
+              href="https://github.com/ZhRodion"
+              target="_blank"
+              >ZhRodion</a
+            >
+          </div>
         </div>
       </section>
       <section class="about-me">
         <h2 class="about-me__title green-heading">Обо мне</h2>
-        <img class="about-me__photo" src="" alt="Моя фотография." />
+        <img
+          class="about-me__photo"
+          src="./img/about/about-photo.jpg"
+          alt="Моя фотография."
+        />
         <h3 class="about-me__content-title">
           Меня зовут Жердев Родион, я верстальщик.
         </h3>
@@ -72,14 +90,27 @@
           можно договориться по выполнению работы и срокам, а также по цене.
         </p>
         <div class="about-info">
-          <b class="about-info__tagline">Имя:</b>
-          <span class="about-info__">Родион</span>
-          <b class="about-info__tagline">Город:</b>
-          <span>Брянск</span>
-          <b class="about-info__tagline">Возраст:</b>
-          <span>24</span>
-          <b class="about-info__tagline">E-mail:</b>
-          <a>jerdew.r@icloud.com</a>
+          <div class="text-info">
+            <b class="text-info__tagline">Имя:</b>
+            <span class="text-info__subtitle">Родион</span>
+          </div>
+          <div class="text-info">
+            <b class="text-info__tagline">Город:</b>
+            <span class="text-info__subtitle">Брянск</span>
+          </div>
+          <div class="text-info">
+            <b class="text-info__tagline">Возраст:</b>
+            <span class="text-info__subtitle">24</span>
+          </div>
+          <div class="text-info">
+            <b class="text-info__tagline">E-mail:</b>
+            <a
+              class="text-info__link"
+              href="mailto:jerdew.r@icloud.com"
+              target="_blank"
+              >jerdew.r@icloud.com</a
+            >
+          </div>
         </div>
         <button class="about-me__button">Связаться</button>
       </section>
@@ -117,60 +148,78 @@
         <h2 class="skills-title">Мои скиллы</h2>
         <ul class="skills-list">
           <li class="skills-list__item">
-            <img class="skills-list__icon" src="" alt="" />
-            <h3 class="skills-list__title">HTML5</h3>
+            <div class="icon-heading">
+              <img class="skills-list__icon" src="" alt="" />
+              <h3 class="skills-list__title">HTML5</h3>
+            </div>
             <p class="skills-list__subtitle">
               Семантическая разметка кода Использование БЭМ
             </p>
           </li>
           <li class="skills-list__item">
-            <img class="skills-list__icon" src="" alt="" />
-            <h3 class="skills-list__title">CSS3</h3>
+            <div class="icon-heading">
+              <img class="skills-list__icon" src="" alt="" />
+              <h3 class="skills-list__title">CSS3</h3>
+            </div>
             <p class="skills-list__subtitle">
               Стилизация элементов на странице
             </p>
           </li>
           <li class="skills-list__item">
-            <img class="skills-list__icon" src="" alt="" />
-            <h3 class="skills-list__title">Java Script</h3>
+            <div class="icon-heading">
+              <img class="skills-list__icon" src="" alt="" />
+              <h3 class="skills-list__title">Java Script</h3>
+            </div>
             <p class="skills-list__subtitle">
               Подключение скриптов для динамичности страницы
             </p>
           </li>
           <li class="skills-list__item">
-            <img class="skills-list__icon" src="" alt="" />
-            <h3 class="skills-list__title">БЭМ</h3>
+            <div class="icon-heading">
+              <img class="skills-list__icon" src="" alt="" />
+              <h3 class="skills-list__title">БЭМ</h3>
+            </div>
             <p class="skills-list__subtitle">
               Компонентный подход к веб-разработке
             </p>
           </li>
           <li class="skills-list__item">
-            <img class="skills-list__icon" src="" alt="" />
-            <h3 class="skills-list__title">Gulp</h3>
+            <div class="icon-heading">
+              <img class="skills-list__icon" src="" alt="" />
+              <h3 class="skills-list__title">Gulp</h3>
+            </div>
             <p class="skills-list__subtitle">Быстрая компиляция файлов</p>
           </li>
           <li class="skills-list__item">
-            <img class="skills-list__icon" src="" alt="" />
-            <h3 class="skills-list__title">Sass</h3>
+            <div class="icon-heading">
+              <img class="skills-list__icon" src="" alt="" />
+              <h3 class="skills-list__title">Sass</h3>
+            </div>
             <p class="skills-list__subtitle">Быстрое написание стилей</p>
           </li>
           <li class="skills-list__item">
-            <img class="skills-list__icon" src="" alt="" />
-            <h3 class="skills-list__title">Git</h3>
+            <div class="icon-heading">
+              <img class="skills-list__icon" src="" alt="" />
+              <h3 class="skills-list__title">Git</h3>
+            </div>
             <p class="skills-list__subtitle">
               Система управления версиями с открытым исходным кодом
             </p>
           </li>
           <li class="skills-list__item">
-            <img class="skills-list__icon" src="" alt="" />
-            <h3 class="skills-list__title">GitHub</h3>
+            <div class="icon-heading">
+              <img class="skills-list__icon" src="" alt="" />
+              <h3 class="skills-list__title">GitHub</h3>
+            </div>
             <p class="skills-list__subtitle">
               Веб-служба размещения для репозиториев Git
             </p>
           </li>
           <li class="skills-list__item">
-            <img class="skills-list__icon" src="" alt="" />
-            <h3 class="skills-list__title">Figma</h3>
+            <div class="icon-heading">
+              <img class="skills-list__icon" src="" alt="" />
+              <h3 class="skills-list__title">Figma</h3>
+            </div>
             <p class="skills-list__subtitle">Верстка сайта по макету Figma</p>
           </li>
         </ul>
@@ -205,60 +254,96 @@
         <div class="slider"></div>
       </section>
       <section class="portfolio">
+        <h2 class="portfolio__title green-title">Портфолио</h2>
         <ul class="portfolio-list">
           <li class="portfolio-list__item">
-            <a class="portfolio-list__link">
+            <a
+              class="portfolio-list__link"
+              href="https://berry-adaptive.netlify.app/"
+              target="_blank"
+            >
               <b class="portfolio-list__lead">Интернет-магазин “Ягода”</b>
             </a>
           </li>
           <li class="portfolio-list__item">
-            <a class="portfolio-list__link">
+            <a
+              class="portfolio-list__link"
+              href="https://sedona-adaptive.netlify.app/"
+              target="_blank"
+            >
               <b class="portfolio-list__lead"
                 >Туристический промо-сайт “Sedona”</b
               >
             </a>
           </li>
           <li class="portfolio-list__item">
-            <a class="portfolio-list__link">
+            <a
+              class="portfolio-list__link"
+              href="https://zhrodion.github.io/sedona-first/"
+              target="_blank"
+            >
               <b class="portfolio-list__lead">Промо-сайт “Sedona”</b>
             </a>
           </li>
         </ul>
       </section>
       <section class="contacts">
-        <h2 class="contacts__title"></h2>
+        <h2 class="contacts__title">Контакты</h2>
         <ul class="contacts-list">
           <li class="contacts-list__item">
             <p class="contacts-list__text">Почта</p>
             <a class="contacts-list__link">
-              <img class="contacts-list__icon" src="" alt="" />
+              <img
+                class="contacts-list__icon"
+                src="./img/social-media/mail.svg"
+                alt=""
+              />
             </a>
           </li>
           <li class="contacts-list__item">
             <p class="contacts-list__text">Соц. сети</p>
             <div class="soc-media-link-icons">
               <a class="contacts-list__link">
-                <img class="contacts-list__icon" src="" alt="" />
+                <img
+                  class="contacts-list__icon"
+                  src="./img/social-media/watsapp.svg"
+                  alt=""
+                />
               </a>
               <a class="contacts-list__link">
-                <img class="contacts-list__icon" src="" alt="" />
+                <img
+                  class="contacts-list__icon"
+                  src="./img/social-media/in.svg"
+                  alt=""
+                />
               </a>
               <a class="contacts-list__link">
-                <img class="contacts-list__icon" src="" alt="" />
+                <img
+                  class="contacts-list__icon"
+                  src="./img/social-media/tg.svg"
+                  alt=""
+                />
               </a>
             </div>
           </li>
           <li class="contacts-list__item">
             <p class="contacts-list__text">Фриланс</p>
             <a class="contacts-list__link">
-              <img class="contacts-list__icon" src="" alt="" />
+              <img
+                class="contacts-list__icon"
+                src="./img/social-media/kv.svg"
+                alt=""
+              />
             </a>
           </li>
         </ul>
       </section>
     </main>
     <footer class="page-footer">
-      <img class="page-footer__logo" src="" alt="" />
+      <a class="page-footer__link" href="/">
+        <img class="page-footer__logo" src="./img/logo/logo-hed.svg" alt="" />
+      </a>
     </footer>
+    <script src="./js/script.js" defer></script>
   </body>
 </html>

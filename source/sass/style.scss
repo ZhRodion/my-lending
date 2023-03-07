@@ -1,4 +1,31 @@
 /* GLOBAL */
-
-
+@import "./global/variables.scss";
+@import "./global/fonts.scss";
+@import "./global/global.scss";
 /* BLOCKS */
+// header
+@import "./blocks/header/burger-button.scss";
+@import "./blocks/header/header.scss";
+@import "./blocks/header/main-nav.scss";
+@import "./blocks/header/nav-list.scss";
+// hero
+@import "./blocks/hero/hero.scss";
+// about
+@import "./blocks/about-me/about-me.scss";
+// advantages
+@import "./blocks/advantages/advantages.scss";
+@import "./blocks/advantages/advantages-points.scss";
+// skills
+@import "./blocks/skills/skills.scss";
+@import "./blocks/skills/skills-list.scss";
+// education
+@import "./blocks/education/education.scss";
+@import "./blocks/education/eduction-list.scss";
+// portfolio
+@import "./blocks/portfolio/portfolio.scss";
+@import "./blocks/portfolio/portfolio-list.scss";
+// contacts
+@import "./blocks/contacts/contacts.scss";
+@import "./blocks/contacts/contacts-list.scss";
+// footer
+@import "./blocks/footer/page-footer.scss";

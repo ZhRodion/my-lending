@@ -1,0 +1,31 @@
+.skills-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.skills-list__item {
+  max-width: 100%;
+  min-height: 120px;
+  background-color: #242424;
+  box-shadow: 4px 4px 18px rgba(198, 198, 198, 0.25);
+  border-radius: 5px;
+  text-align: left;
+}
+.icon-heading {
+  max-width: 100%;
+  height: 100%;
+  padding: 0 0 0 21px;
+  display: flex;
+}
+.skills-list__title {
+  width: 100%;
+  height: 100%;
+  padding: 15px 0 0;
+}
+.skills-list__subtitle {
+  max-width: 100%;
+  height: 100%;
+  padding: 8px 21px 24px 21px;
+}

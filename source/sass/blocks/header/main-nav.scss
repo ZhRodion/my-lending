@@ -1,0 +1,91 @@
+.main-nav {
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+ @media (min-width: $tablet) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: calc(15% + 5px);
+}
+@media (min-width: $desktop) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+}
+// Logo
+
+// Кнопка меню
+.main-nav__toggle {
+  width: 60px;
+    height: 60px;
+    margin: 0;
+    position: absolute;
+    top: 13%;
+    right: 12%;
+    border: 0;
+    cursor: pointer;
+    background-color: #242424;
+@media (min-width: $tablet) {
+  display: none;
+  }
+  @media (min-width: $desktop) {
+    display: none;
+    }
+}
+// Меню
+.main-nav__wrapper {
+max-width: 100%;
+min-height: 100%;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+font-size: 20px;
+line-height: 23px;
+@media (min-width: $tablet) {
+ max-width: 100%;
+  min-height: 20px;
+  align-items: flex-start
+}
+@media (min-width: $tablet) {
+  width: 100%;
+}
+}
+// Отступ у первой ссылки
+.main-nav__link:first-child {
+  @media (max-width: $mobile-width-only) {
+    padding: 36px 0 0;
+  }
+}
+.nav-list {
+margin: 0;
+padding: 0;
+@media (min-width: $tablet){
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+}
+.main-nav__link {
+display: block;
+font-weight: 400;
+color: #ffffff;
+text-align: start;
+}

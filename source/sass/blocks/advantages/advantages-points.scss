@@ -1,0 +1,20 @@
+.advantages-points {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.advantages-points__title {
+width: 100%;
+height: 100%;
+}
+.advantages-points__subtitle {
+width: 100%;
+height: 100%;
+margin: 0;
+padding: 20px 0;
+border-bottom: 1px solid #ffffff;
+}
+.advantages-points__item:last-child .advantages-points__subtitle {
+border-bottom: 0;
+}

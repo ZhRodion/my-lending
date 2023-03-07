@@ -1,2 +1,1 @@
-/* в этот файл добавляет скрипты*/
-
+let navToggle=document.querySelector(".main-nav__toggle"),navList=document.querySelector(".nav-list"),burgButton=document.querySelector(".burger-button");navToggle.addEventListener("click",(function(){navList.classList.contains("nav-list--closed")?(navList.classList.remove("nav-list--closed"),navList.classList.add("nav-list--opened")):(navList.classList.add("nav-list--closed"),navList.classList.remove("nav-list--opened")),burgButton.classList.contains("burger-button--closed")?(burgButton.classList.remove("burger-button--closed"),burgButton.classList.add("burger-button--opened")):(burgButton.classList.add("burger-button--closed"),burgButton.classList.remove("burger-button--opened"))}));
