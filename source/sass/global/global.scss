@@ -49,3 +49,17 @@ clip-path: inset(100%);
 clip: rect(0 0 0 0);
 overflow: hidden;
 }
+.green-title {
+  color: #0A9A67;
+}
+.content-container {
+  @media (min-width: $tablet) {
+    padding: 0 50px;
+  }
+  @media (min-width: $desktop) {
+    padding: 0 190px;
+  }
+  @media (min-width: $desktop-hight) {
+    padding: 0 300px;
+  }
+}

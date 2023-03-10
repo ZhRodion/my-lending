@@ -1,10 +1,16 @@
 .contacts-list {
   max-width: 100%;
   height: 100%;
-  padding: 0;
+  padding: 0 0 90px 0;
   margin: 30px 0 0;
   display: flex;
   align-items: center;
+  @media (min-width: $tablet) {
+  margin: 99px 0 0;
+  }
+  @media (min-width: $desktop) {
+  margin: 70px 0 0;
+  }
 }
 .contacts-list__item {
   width: 100%;
@@ -24,4 +30,17 @@ border: 0;
   display: flex;
   justify-content: center;
   gap: 10px;
+  @media (min-width: $tablet) {
+    gap: 28px;
+  }
+}
+.contacts-list__icon {
+  @media (max-width: $mobile-width-only) {
+    width: 25px;
+    height: 25px;
+  }
+  @media (min-width: $tablet) {
+    width: 50px;
+    height: 50px;
+  }
 }

@@ -3,14 +3,45 @@
   height: 100%;
   padding: 70px 17px 0 17px;
   background-color: #242424;
+  @media (min-width: $mobile-hight) {
+    background-image: url('../../../img/hero/hero-mob.png');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+  }
+  @media (min-width: $tablet) {
+    padding: 70px 60px 0;
+    background-image: url('../../../img/hero/hero744.png');
+    background-repeat: no-repeat;
+    background-position: 85% 100%;
+  }
+  @media (min-width: $desktop) {
+    padding: 117px 0 0 135px;
+    min-height: 660px;
+    background-image: url('../../../img/hero/hero1440.png');
+    background-repeat: no-repeat;
+    background-position: 90% 100%;
+  }
+  @media (min-width: $desktop-hight) {
+    padding: 117px 0 0 310px;
+    background-position: 85% 100%;
+  }
 }
 .hero__title {
   width: 100%;
   height: 100%;
-  padding: 75px 0 0;
+  padding: 73px 0 0;
+  @media (min-width: $mobile-hight) {
+    padding: 53px 0 0;
+   text-align: start;
+  }
 }
 .hero__subtitle {
   padding: 23px 0 0;
+  @media (min-width: $mobile-hight) {
+    width: 55%;
+    padding: 44px 0 0;
+    text-align: start;
+  }
 }
 .hero__button {
   width: 100%;
@@ -20,25 +51,58 @@
   background: #0A9A67;
   color: #ffffff;
   border-radius: 7px;
+  @media (min-width: $mobile-hight) {
+    width: 50%;
+    max-width: 55%;
+    margin: 100px 0 0;
+    display: flex;
+    justify-content: center;
+  }
+  @media (min-width: $tablet) {
+    width: 30%;
+  }
 }
 .social-group {
   width: 70%;
   height: 100%;
-  padding: 120px 0 0;
+  padding: 120px 0 31px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  @media (min-width: $mobile-hight) {
+    margin: 0;
+    align-items: flex-start;
+  }
+  @media (min-width: $tablet) {
+  flex-direction: row;
+  }
 }
 .soc-media-info {
-  display: grid;
-  grid-template-columns: 0.5fr 1fr;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  @media (min-width: $mobile-hight) {
+    justify-items: start;
+  }
+  @media (min-width: $tablet) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .soc-media-info:first-child {
  padding: 0 0 11px;
  border-bottom: 1px solid #ffffff;
+ @media (min-width: $tablet) {
+  border: 0;
+  padding: 0 16px 0 0;
+ }
 }
 .soc-media-info:last-child {
   padding: 11px 0 32px;
+  @media (min-width: $tablet) {
+    border-left: 1px solid #ffffff;
+    padding: 0 0 0 16px;
+  }
 }
 .soc-media-info__link {
   display: grid;

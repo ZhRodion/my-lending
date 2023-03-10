@@ -1,40 +1,57 @@
 .about-me {
   max-width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0 19px;
+  @media (min-width: $tablet) {
+    padding: 60px 0 0;
+    text-align: start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .about-me__title {
   width: 100%;
-  height: 100%;
   padding: 40px 0 30px;
   display: flex;
   justify-content: center;
+  @media (min-width: $tablet) {
+    justify-content: flex-start;
+    padding: 0;
+  }
 }
 .about-me__content-title {
   width: 100%;
-  height: 100%;
   padding: 30px 0 0;
   margin: 0;
   text-align: left;
+  @media (min-width: $tablet) {
+    width: 70%;
+    text-align: left;
+    padding: 20px 0 0;
+  }
 }
 .about-me__subtitle {
   width: 100%;
-  height: 100%;
   padding: 20px 0 20px;
   margin: 0;
   text-align: left;
   border-bottom: 1px solid #ffffff;
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
 }
 .about-info {
   max-width: 100%;
-  height: 100%;
   padding: 0;
   margin: 20px 0 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  @media (min-width: $desktop) {
+    row-gap: 10px;
+  }
 }
 .text-info {
   width: 50%;
@@ -42,10 +59,47 @@
 }
 .about-me__button {
   width: 100%;
-  height: 100%;
   margin: 30px 0 0;
   padding: 10px 25px;
   background: #0A9A67;
   color: #ffffff;
   border-radius: 7px;
+  @media (min-width: $tablet) {
+    width: 90%;
+    padding: 10px 25px;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+  @media (min-width: $desktop) {
+    width: 100%;
+  }
+}
+.about-text {
+  @media (min-width: $tablet) {
+    padding: 0 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-start;
+  }
+  @media (min-width: $desktop-hight) {
+    padding: 0 0 0 80px;
+  }
+}
+.about-me__picture {
+  order: -1;
+}
+.contact-me {
+  display: none;
+@media (min-width: $tablet) {
+  display: flex;
+  flex-direction: column;
+  order: -1;
+}
+}
+// Исчезновение фото на планшете
+.mobile-only {
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
