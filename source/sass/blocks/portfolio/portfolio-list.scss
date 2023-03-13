@@ -94,13 +94,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   @media (min-resolution: 2dppx) {
-    background-image: url('../../../img/portfolio/retina/mobile/sedona-2-2x-mob.png');
+    background-image: url('../../../img/portfolio/retina/mobile/sedona-2-2xmob.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
   @media (min-width: $desktop) {
     @media (min-resolution: 2dppx) {
-      background-image: url('../../../img/portfolio/retina/mobile/sedona-2-2x-desk.png');
+      background-image: url('../../../img/portfolio/retina/desktop/sedona2-2x-desk.png');
       background-repeat: no-repeat;
       background-size: cover;
     }

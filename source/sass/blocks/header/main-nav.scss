@@ -44,6 +44,9 @@
     display: none;
     }
 }
+.main-nav__toggle::after body {
+background-color: black;
+}
 // Меню
 .main-nav__wrapper {
   width: 100%;

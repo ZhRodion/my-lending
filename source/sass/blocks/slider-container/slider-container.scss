@@ -28,8 +28,8 @@
 .arrow {
   width:7px;
   height:7px;
-  border-top:#cacaca 3px solid;
-  border-right:#cacaca 3px solid;
+  border-top: #000000 3px solid;
+  border-right: #000000 3px solid;
   position: absolute;
 }
 .arrow-bg {
@@ -57,12 +57,12 @@
   top:50%;
   left:10px;
   transform: translateY(-50%);
-  z-index: 2;
+  z-index: 1;
 }
 .arrow-right {
   position: absolute;
   top:50%;
   right:10px;
   transform: translateY(-50%);
-  z-index: 2;
+  z-index: 1;
 }
