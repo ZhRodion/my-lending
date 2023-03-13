@@ -5,6 +5,7 @@
     <title>my-portfolio</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body class="page">
     <!-- Хэдер -->
@@ -29,16 +30,16 @@
         <div class="main-nav__wrapper">
           <ul class="nav-list nav-list--closed">
             <li class="nav-list__item">
-              <a class="main-nav__link link" href="">Обо мне</a>
+              <a class="main-nav__link link" href="#about-me">Обо мне</a>
             </li>
             <li class="nav-list__item">
-              <a class="main-nav__link link" href="">Образование</a>
+              <a class="main-nav__link link" href="#education">Образование</a>
             </li>
             <li class="nav-list__item">
-              <a class="main-nav__link link" href="">Портфолио</a>
+              <a class="main-nav__link link" href="#portfolio">Портфолио</a>
             </li>
             <li class="nav-list__item">
-              <a class="main-nav__link link" href="">Контакты</a>
+              <a class="main-nav__link link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </div>
@@ -46,11 +47,16 @@
     </header>
     <main class="main">
       <section class="hero">
-        <h1 class="hero__title">Профессиональная верстка сайта</h1>
+        <h1 class="hero__title">
+          Профессиональная <br />
+          верстка сайта
+        </h1>
         <p class="hero__subtitle">
           Верстаю как простые лендинги, так и сложные сайты
         </p>
-        <button class="hero__button">Обсудить проект</button>
+        <a class="hero__link" href="#contacts">
+          <button class="hero__button">Обсудить проект</button>
+        </a>
         <div class="social-group">
           <div class="soc-media-info">
             <span class="soc-media-info__description">E-mail</span>
@@ -62,7 +68,7 @@
               >rodion.coder@gmail.com</a
             >
           </div>
-          <div class="soc-media-info">
+          <div class="soc-media-info" id="about-me">
             <span class="soc-media-info__description">GitHub</span>
             <a
               class="soc-media-info__link"
@@ -76,12 +82,18 @@
       <div class="content-container">
         <section class="about-me">
           <div class="about-text">
-            <h2 class="about-me__title green-title">Обо мне</h2>
+            <h2 class="about-me__title green-title section-title">Обо мне</h2>
             <div class="mobile-only">
               <picture class="about-me__picture">
                 <source
                   srcset="./img/about/about-desk.png"
+                  srcset="./img/about/retina/about-me2xdesk.png"
                   media="(min-width: 1440px)"
+                />
+                <source
+                  srcset="./img/about/about-photo.png"
+                  srcset="./img/about/retina/about-me2xmob.png"
+                  media="(min-width: 320px)"
                 />
                 <img
                   class="about-me__photo"
@@ -132,22 +144,22 @@
               />
               <img
                 class="about-me__photo"
-                src="./img/about/about-photo.jpg"
+                src="./img/about/about-photo.png"
                 alt="Моя фотография."
               />
             </picture>
-            <a class="about-me__link" href="">
+            <a class="about-me__link" href="#contacts">
               <button class="about-me__button" type="button">Связаться</button>
             </a>
           </div>
           <div class="mobile-only">
-            <a class="about-me__link" href="">
+            <a class="about-me__link" href="#contacts">
               <button class="about-me__button" type="button">Связаться</button>
             </a>
           </div>
         </section>
         <section class="advantages">
-          <h2 class="advantages__title">
+          <h2 class="advantages__title section-title">
             Почему стоит выбрать меня как исполнителя?
           </h2>
           <ul class="advantages-points">
@@ -189,7 +201,7 @@
           </ul>
         </section>
         <section class="skills">
-          <h2 class="skills__title">Мои скиллы</h2>
+          <h2 class="skills__title section-title">Мои скиллы</h2>
           <ul class="skills-list">
             <li class="skills-list__item">
               <div class="icon-heading">
@@ -292,7 +304,7 @@
               </p>
             </li>
             <li class="skills-list__item">
-              <div class="icon-heading">
+              <div class="icon-heading" id="education">
                 <img
                   class="skills-list__icon"
                   src="./img/skills-list/figma.svg"
@@ -305,7 +317,9 @@
           </ul>
         </section>
         <section class="education">
-          <h2 class="education__title green-title">Образование</h2>
+          <h2 class="education__title green-title section-title">
+            Образование
+          </h2>
           <h3 class="education__heading">Выпускник HTML Academy</h3>
           <ul class="eduction-list">
             <li class="eduction-list__item">
@@ -330,11 +344,56 @@
             </li>
           </ul>
           <!-- Сертификаты -->
-          <h3 class="skills__heading">Мои сертификаты</h3>
-          <div class="slider"></div>
+          <h3 class="skills__heading" id="portfolio">Мои сертификаты</h3>
+          <!-- Слайдер -->
+          <div class="slider-container">
+            <div class="arrow-left">
+              <div class="arrow-bg">
+                <div class="arrow"></div>
+              </div>
+            </div>
+            <div class="arrow-right">
+              <div class="arrow-bg">
+                <div class="arrow"></div>
+              </div>
+            </div>
+            <!-- лента с фотографиями -->
+            <div class="slider-track">
+              <div class="slider-item">
+                <a href="./img/sert/sert1.png">
+                  <picture>
+                    <source
+                      srcset="./img/sert/sert1.png"
+                      media="(min-width: 744px)"
+                    />
+                    <source
+                      srcset="./img/sert/mob/sert1mob.png"
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./img/sert/sert1.png" alt="" />
+                  </picture>
+                </a>
+              </div>
+              <div class="slider-item">
+                <a href="./img/sert/sert2.png">
+                  <picture>
+                    <source
+                      srcset="./img/sert/sert2.png"
+                      media="(min-width: 744px)"
+                    />
+                    <source
+                      srcset="./img/sert/mob/sert2mob.png"
+                      media="(min-width: 320px)"
+                    />
+                    <img src="./img/cert/sert2.png" alt="" />
+                  </picture>
+                </a>
+              </div>
+            </div>
+          </div>
         </section>
         <section class="portfolio">
-          <h2 class="portfolio__title green-title">Портфолио</h2>
+          <h2 class="portfolio__title green-title section-title">Портфолио</h2>
           <ul class="portfolio-list">
             <li class="portfolio-list__item berry-bg">
               <a
@@ -362,13 +421,15 @@
                 href="https://zhrodion.github.io/sedona-first/"
                 target="_blank"
               >
-                <b class="portfolio-list__lead">Промо-сайт “Sedona”</b>
+                <b class="portfolio-list__lead" id="contacts"
+                  >Промо-сайт “Sedona”</b
+                >
               </a>
             </li>
           </ul>
         </section>
         <section class="contacts">
-          <h2 class="contacts__title">Контакты</h2>
+          <h2 class="contacts__title section-title green-title">Контакты</h2>
           <ul class="contacts-list">
             <li class="contacts-list__item">
               <p class="contacts-list__text">Почта</p>
@@ -376,47 +437,103 @@
                 class="contacts-list__link"
                 href="mailto:rodion.coder@gmail.com"
               >
-                <img
+                <svg
                   class="contacts-list__icon"
-                  src="./img/social-media/mail.svg"
-                  alt=""
-                />
+                  width="76"
+                  height="76"
+                  viewBox="0 0 76 76"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.83333 0.5C6.6232 0.5 4.50358 1.37797 2.94078 2.94078C1.37797 4.50358 0.5 6.6232 0.5 8.83333V67.1667C0.5 69.3768 1.37797 71.4964 2.94078 73.0592C4.50358 74.622 6.6232 75.5 8.83333 75.5H67.1667C69.3768 75.5 71.4964 74.622 73.0592 73.0592C74.622 71.4964 75.5 69.3768 75.5 67.1667V8.83333C75.5 6.6232 74.622 4.50358 73.0592 2.94078C71.4964 1.37797 69.3768 0.5 67.1667 0.5H8.83333ZM14.6667 15.0833H61.3333C64.5417 15.0833 67.1667 17.6667 67.1667 20.9167V55.0833C67.1667 56.6304 66.5521 58.1142 65.4581 59.2081C64.3642 60.3021 62.8804 60.9167 61.3333 60.9167H14.6667C11.4583 60.9167 8.83333 58.2917 8.83333 55.0833V20.9167C8.83333 17.6667 11.4167 15.0833 14.6667 15.0833ZM13 21.3333V29.6667L38 46.3333L63 29.6667V21.3333L38 38L13 21.3333Z"
+                    fill="#0A9A67"
+                  />
+                </svg>
               </a>
             </li>
             <li class="contacts-list__item">
               <p class="contacts-list__text">Соц. сети</p>
               <div class="soc-media-link-icons">
-                <a class="contacts-list__link">
-                  <img
+                <a
+                  class="contacts-list__link"
+                  href="https://wa.me/message/BQS5FPK5PTQAG1"
+                  target="_blank"
+                >
+                  <svg
                     class="contacts-list__icon"
-                    src="./img/social-media/watsapp.svg"
-                    alt=""
-                  />
+                    width="84"
+                    height="84"
+                    viewBox="0 0 84 84"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M83.6667 19.2916C83.6199 17.494 83.4808 15.7 83.25 13.9166C82.9389 12.3547 82.4204 10.8413 81.7083 9.41665C80.9636 7.87125 79.9634 6.46259 78.75 5.24998C77.5254 4.05083 76.1192 3.05244 74.5833 2.29165C73.1568 1.5935 71.6434 1.08904 70.0833 0.791646C68.3169 0.52706 66.5356 0.37398 64.75 0.333313H19.2917C17.4941 0.380131 15.7 0.519203 13.9167 0.749979C12.3547 1.0611 10.8413 1.57958 9.41667 2.29165C7.87127 3.03638 6.46261 4.03653 5.25 5.24998C4.05085 6.47461 3.05246 7.88079 2.29167 9.41665C1.59352 10.8432 1.08906 12.3565 0.791669 13.9166C0.527083 15.683 0.374003 17.4643 0.333336 19.25V64.7083C0.380154 66.5059 0.519226 68.2999 0.750002 70.0833C1.06112 71.6453 1.5796 73.1587 2.29167 74.5833C3.03641 76.1287 4.03656 77.5374 5.25 78.75C6.47463 79.9491 7.88081 80.9475 9.41667 81.7083C10.8432 82.4065 12.3566 82.9109 13.9167 83.2083C15.6831 83.4729 17.4644 83.626 19.25 83.6666H64.7083C66.506 83.6198 68.3 83.4808 70.0833 83.25C71.6453 82.9389 73.1587 82.4204 74.5833 81.7083C76.1287 80.9636 77.5374 79.9634 78.75 78.75C79.9492 77.5254 80.9475 76.1192 81.7083 74.5833C82.4065 73.1568 82.9109 71.6434 83.2083 70.0833C83.4729 68.3169 83.626 66.5356 83.6667 64.75V19.2916ZM42.9583 71.1666C37.9544 71.142 33.0381 69.852 28.6667 67.4166L12.8333 71.5833L17 56.0833C14.313 51.5685 12.8749 46.4204 12.8333 41.1666C12.8499 35.2622 14.6133 29.4946 17.9015 24.5904C21.1897 19.6862 25.8555 15.8647 31.3114 13.6071C36.7672 11.3496 42.7692 10.7569 48.5612 11.9039C54.3532 13.0508 59.6763 15.8861 63.8601 20.0525C68.0439 24.2189 70.9013 29.5302 72.0723 35.3174C73.2433 41.1046 72.6756 47.109 70.4408 52.5742C68.2059 58.0394 64.4038 62.7211 59.5133 66.0296C54.6229 69.3381 48.8627 71.1255 42.9583 71.1666ZM42.9583 16.4583C38.5409 16.5089 34.2157 17.7291 30.4232 19.9947C26.6306 22.2604 23.5062 25.4905 21.3679 29.3563C19.2296 33.2221 18.154 37.5855 18.2504 42.0022C18.3468 46.4189 19.6118 50.7312 21.9167 54.5L22.5 55.4583L20 64.5833L29.5 62L30.4167 62.5416C34.2066 64.774 38.5183 65.9669 42.9167 66C49.5471 66 55.9059 63.3661 60.5943 58.6776C65.2827 53.9892 67.9167 47.6304 67.9167 41C67.9167 34.3696 65.2827 28.0107 60.5943 23.3223C55.9059 18.6339 49.5471 16 42.9167 16L42.9583 16.4583ZM57.5417 51.9583C56.9959 52.8686 56.2652 53.6542 55.3967 54.2642C54.5283 54.8743 53.5414 55.2953 52.5 55.5C50.9439 55.7844 49.3419 55.6843 47.8333 55.2083C46.414 54.7646 45.0226 54.2358 43.6667 53.625C38.5156 51.0402 34.1227 47.1641 30.9167 42.375C29.1745 40.1561 28.1175 37.4773 27.875 34.6666C27.8502 33.4991 28.0711 32.3394 28.5233 31.2627C28.9755 30.186 29.649 29.2163 30.5 28.4166C30.7507 28.1324 31.0582 27.904 31.4027 27.7461C31.7472 27.5882 32.1211 27.5043 32.5 27.5H33.6667C34.125 27.5 34.75 27.5 35.3333 28.7916C35.9167 30.0833 37.4583 33.9583 37.6667 34.3333C37.7691 34.5332 37.8224 34.7546 37.8224 34.9791C37.8224 35.2037 37.7691 35.4251 37.6667 35.625C37.4825 36.0778 37.2295 36.4994 36.9167 36.875C36.5417 37.3333 36.125 37.875 35.7917 38.2083C35.4583 38.5416 35.0417 38.9583 35.4583 39.7083C36.592 41.6216 37.9953 43.3617 39.625 44.875C41.3997 46.4431 43.4288 47.6972 45.625 48.5833C46.375 48.9583 46.8333 48.9166 47.25 48.5833C47.6667 48.25 49.125 46.4166 49.625 45.6666C50.125 44.9166 50.625 45.0416 51.2917 45.2916C51.9583 45.5416 55.6667 47.3333 56.4167 47.7083C57.1667 48.0833 57.625 48.25 57.8333 48.5833C58.014 49.6738 57.9137 50.7924 57.5417 51.8333V51.9583Z"
+                      fill="#0A9A67"
+                    />
+                  </svg>
                 </a>
-                <a class="contacts-list__link">
-                  <img
+                <a
+                  class="contacts-list__link"
+                  href="https://www.linkedin.com/in/rodion-zherdev-51885925b/"
+                  target="_blank"
+                >
+                  <svg
                     class="contacts-list__icon"
-                    src="./img/social-media/in.svg"
-                    alt=""
-                  />
+                    width="84"
+                    height="84"
+                    viewBox="0 0 84 84"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M77.2917 0.333346H6.70833C5.91491 0.322327 5.12708 0.467711 4.38985 0.761195C3.65262 1.05468 2.98043 1.49052 2.41165 2.04381C1.84288 2.59711 1.38867 3.25703 1.07496 3.98589C0.761255 4.71474 0.594197 5.49825 0.583328 6.29168V77.7083C0.594197 78.5018 0.761255 79.2853 1.07496 80.0141C1.38867 80.743 1.84288 81.4029 2.41165 81.9562C2.98043 82.5095 3.65262 82.9453 4.38985 83.2388C5.12708 83.5323 5.91491 83.6777 6.70833 83.6667H77.2917C78.0851 83.6777 78.8729 83.5323 79.6101 83.2388C80.3474 82.9453 81.0196 82.5095 81.5883 81.9562C82.1571 81.4029 82.6113 80.743 82.925 80.0141C83.2387 79.2853 83.4058 78.5018 83.4167 77.7083V6.29168C83.4058 5.49825 83.2387 4.71474 82.925 3.98589C82.6113 3.25703 82.1571 2.59711 81.5883 2.04381C81.0196 1.49052 80.3474 1.05468 79.6101 0.761195C78.8729 0.467711 78.0851 0.322327 77.2917 0.333346ZM25.7083 70.0833H13.2083V32.5833H25.7083V70.0833ZM19.4583 27.3333C17.7344 27.3333 16.0811 26.6485 14.8621 25.4295C13.6431 24.2106 12.9583 22.5573 12.9583 20.8333C12.9583 19.1094 13.6431 17.4561 14.8621 16.2372C16.0811 15.0182 17.7344 14.3333 19.4583 14.3333C20.3737 14.2295 21.3007 14.3202 22.1786 14.5995C23.0566 14.8788 23.8656 15.3404 24.5527 15.954C25.2399 16.5677 25.7897 17.3195 26.1661 18.1604C26.5426 19.0012 26.7372 19.9121 26.7372 20.8333C26.7372 21.7546 26.5426 22.6655 26.1661 23.5063C25.7897 24.3472 25.2399 25.099 24.5527 25.7127C23.8656 26.3263 23.0566 26.7879 22.1786 27.0672C21.3007 27.3465 20.3737 27.4372 19.4583 27.3333ZM70.7917 70.0833H58.2917V49.9583C58.2917 44.9167 56.5 41.625 51.9583 41.625C50.5528 41.6353 49.1841 42.0762 48.0368 42.8882C46.8895 43.7003 46.0187 44.8445 45.5417 46.1667C45.2156 47.146 45.0743 48.1774 45.125 49.2083V70.0417H32.625V32.5417H45.125V37.8333C46.2605 35.863 47.9121 34.2397 49.9018 33.1384C51.8916 32.037 54.144 31.4994 56.4167 31.5833C64.75 31.5833 70.7917 36.9583 70.7917 48.5V70.0833Z"
+                      fill="#0A9A67"
+                    />
+                  </svg>
                 </a>
-                <a class="contacts-list__link">
-                  <img
+                <a
+                  class="contacts-list__link"
+                  href="https://t.me/Rodion_Zherdev"
+                  target="_blank"
+                >
+                  <svg
                     class="contacts-list__icon"
-                    src="./img/social-media/tg.svg"
-                    alt=""
-                  />
+                    width="84"
+                    height="84"
+                    viewBox="0 0 84 84"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M41.975 0.333313C33.7341 0.333313 25.6783 2.77702 18.8262 7.35541C11.9742 11.9338 6.63367 18.4412 3.48002 26.0548C0.326369 33.6684 -0.49877 42.0462 1.10895 50.1287C2.71666 58.2113 6.68503 65.6356 12.5122 71.4628C18.3394 77.2899 25.7637 81.2583 33.8462 82.866C41.9288 84.4738 50.3066 83.6486 57.9201 80.495C65.5337 77.3413 72.0412 72.0008 76.6196 65.1487C81.198 58.2967 83.6417 50.2409 83.6417 42C83.6417 36.5282 82.5639 31.1101 80.47 26.0548C78.376 20.9996 75.3069 16.4063 71.4378 12.5372C67.5687 8.66809 62.9754 5.59895 57.9201 3.505C52.8649 1.41105 47.4467 0.333313 41.975 0.333313ZM55.225 63.4666C55.0695 63.8559 54.8325 64.2074 54.5299 64.4975C54.2273 64.7875 53.8662 65.0095 53.4707 65.1484C53.0752 65.2874 52.6546 65.34 52.2371 65.3029C51.8195 65.2658 51.4148 65.1398 51.05 64.9333L39.7375 56.1416L32.4792 62.8416C32.3107 62.966 32.1137 63.0461 31.9062 63.0745C31.6987 63.1029 31.4874 63.0787 31.2917 63.0041L32.6833 50.55L32.725 50.5875L32.7542 50.3416C32.7542 50.3416 53.1083 31.8083 53.9375 31.0208C54.7792 30.2333 54.5 30.0625 54.5 30.0625C54.55 29.1041 52.9958 30.0625 52.9958 30.0625L26.025 47.4125L14.7958 43.5875C14.7958 43.5875 13.0708 42.9708 12.9083 41.6083C12.7375 40.2583 14.85 39.525 14.85 39.525L59.5042 21.7833C59.5042 21.7833 63.175 20.15 63.175 22.8583L55.225 63.4666Z"
+                      fill="#0A9A67"
+                    />
+                  </svg>
                 </a>
               </div>
             </li>
             <li class="contacts-list__item">
               <p class="contacts-list__text">Фриланс</p>
-              <a class="contacts-list__link">
-                <img
+              <a
+                class="contacts-list__link"
+                href="https://kwork.ru/user/rodioncoder"
+                target="_blank"
+              >
+                <svg
                   class="contacts-list__icon"
-                  src="./img/social-media/kv.svg"
-                  alt=""
-                />
+                  width="84"
+                  height="84"
+                  viewBox="0 0 84 84"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M67.2394 0H16.7606C12.3154 0 8.05227 1.76584 4.90906 4.90906C1.76584 8.05227 0 12.3154 0 16.7606L0 67.2394C0 71.6846 1.76584 75.9477 4.90906 79.0909C8.05227 82.2342 12.3154 84 16.7606 84H67.2394C71.6846 84 75.9477 82.2342 79.0909 79.0909C82.2342 75.9477 84 71.6846 84 67.2394V16.7606C84 12.3154 82.2342 8.05227 79.0909 4.90906C75.9477 1.76584 71.6846 0 67.2394 0ZM22.9856 22.0549H35.3214C35.3043 24.9575 35.2872 27.8607 35.2701 30.7645L26.7124 41.0851V27.1896H22.9363C22.9521 25.478 22.9685 23.7665 22.9856 22.0549ZM50.7273 62.582L38.5434 46.3716L35.3707 50.3487C35.422 54.4107 35.4726 58.472 35.5225 62.5327L26.5606 62.582C26.6118 58.7054 26.6624 54.8274 26.7124 50.9482L49.5679 22.2561L60.3932 22.3073L44.2242 41.2862L61.2411 62.5327L50.7273 62.582Z"
+                    fill="#0A9A67"
+                  />
+                </svg>
               </a>
             </li>
           </ul>
@@ -429,5 +546,6 @@
       </a>
     </footer>
     <script src="./js/script.js" defer></script>
+    <script src="./js/sldier.js" defer></script>
   </body>
 </html>

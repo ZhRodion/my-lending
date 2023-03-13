@@ -11,6 +11,16 @@
 }
 .advantages-points__title {
 width: 100%;
+font-size: 20px;
+line-height: 1.3;
+@media (min-width: $tablet) {
+font-size: 32px;
+line-height: 1.28;
+}
+@media (min-width: $desktop) {
+font-size: 32px;
+line-height: 1.28;
+}
 }
 .advantages-points__subtitle {
 width: 100%;
@@ -18,8 +28,20 @@ height: 100%;
 margin: 0;
 padding: 20px 0;
 border-bottom: 1px solid #ffffff;
+font-size: 12px;
+line-height: 1.5;
+@media (min-width: $mobile-hight) {
+font-size: 14px;
+line-height: 1.5;
+}
 @media (min-width: $tablet) {
   border-bottom: 0;
+  font-size: 12px;
+  line-height: 1.3;
+}
+@media (min-width: $desktop) {
+  font-size: 16px;
+  line-height: 1.6;
 }
 }
 // Отступ текста послю блока на планшете
@@ -49,7 +71,8 @@ padding: 28px 0 0;
 .advantages-points__item:last-child .advantages-points__subtitle {
 border-bottom: 0;
 }
-// .advantages-points__icon {
-//   width: 42px;
-//   height: 42px;
-// }
+.advantages-points__item:last-child .advantages-points__icons{
+  @media (min-width: $tablet) {
+    height: 114px;
+  }
+}

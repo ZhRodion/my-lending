@@ -10,6 +10,7 @@
   @media (min-width: $tablet) {
     column-gap: 43px;
     row-gap: 40px;
+    padding: 60px 0 0;
   }
   @media (min-width: $desktop) {
     flex-wrap: nowrap;
@@ -51,17 +52,53 @@
   display: block;
 }
 .berry-bg {
-  background-image: url(../../../img/portfolio/berry.png);
+  background-image: url('../../../img/portfolio/berry.png');
   background-repeat: no-repeat;
   background-size: cover;
+  @media (min-resolution: 2dppx) {
+    background-image: url('../../../img/portfolio/retina/mobile/berry-2x-mob.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media (min-width: $desktop) {
+    @media (min-resolution: 2dppx) {
+    background-image: url('../../../img/portfolio/retina/desktop/berry-2x-desk.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+  }
 }
 .sed-first-bg {
-  background-image: url(../../../img/portfolio/sedona-1.png);
+  background-image: url('../../../img/portfolio/sedona-1.png');
   background-repeat: no-repeat;
   background-size: cover;
+  @media (min-resolution: 2dppx) {
+    background-image: url('../../../img/portfolio/retina/mobile/sedona-1-2x-mob.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media (min-width: $desktop) {
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../../img/portfolio/retina/desktop/sedona-1-2x-desk.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
 }
 .sed-second-bg {
-  background-image: url(../../../img/portfolio/sedona2.png);
+  background-image: url('../../../img/portfolio/sedona2.png');
   background-repeat: no-repeat;
   background-size: cover;
+  @media (min-resolution: 2dppx) {
+    background-image: url('../../../img/portfolio/retina/mobile/sedona-2-2x-mob.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media (min-width: $desktop) {
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../../img/portfolio/retina/mobile/sedona-2-2x-desk.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
 }

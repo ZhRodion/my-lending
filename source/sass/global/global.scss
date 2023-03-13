@@ -8,6 +8,7 @@ body {
   background-color: #101010;
   font-family: 'PT Sans Caption', sans-serif;
   color: #ffffff;
+  word-break: break-word;
 }
 // Стандартные стили заголовков и текста
 h1, h2, h3 {
@@ -61,5 +62,18 @@ overflow: hidden;
   }
   @media (min-width: $desktop-hight) {
     padding: 0 300px;
+  }
+}
+// Секционные заголовки
+.section-title {
+  font-size: 22px;
+  line-height: 1.27;
+  @media (min-width: $mobile-hight) {
+    font-size: 34px;
+    line-height: 1.29;
+  }
+  @media (min-width: $desktop) {
+  font-size: 36px;
+  line-height: 1.3;
   }
 }

@@ -19,6 +19,12 @@
   flex-direction: column;
   gap: 16px;
   border-right: 1px solid #ffffff;
+  @media (min-width: $tablet) {
+    gap: 18px;
+  }
+  @media (min-width: $desktop) {
+    gap: 26px;
+  }
 }
 .contacts-list__item:nth-child(2) {
   padding: 0 23px;
@@ -34,13 +40,43 @@ border: 0;
     gap: 28px;
   }
 }
-.contacts-list__icon {
-  @media (max-width: $mobile-width-only) {
-    width: 25px;
-    height: 25px;
+.contacts-list__text {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.28;
+  @media (min-width: $mobile-hight) {
+    font-size: 18px;
+    line-height: 1.27;
   }
   @media (min-width: $tablet) {
-    width: 50px;
-    height: 50px;
+    font-size: 22px;
+    line-height: 1.27;
+  }
+  @media (min-width: $desktop) {
+    font-size: 24px;
+    line-height: 1.29;
   }
 }
+.contacts-list__icon {
+width: 25px;
+height: 25px;
+@media (min-width: $tablet) {
+  width: 50px;
+  height: 50px;
+}
+@media (min-width: $desktop) {
+  width: 75px;
+  height: 75px;
+}
+&:hover {
+  fill: #00C57E;
+}
+&:active {
+  opacity: 0.5;
+ }
+}
+.contacts-list__icon path {
+    &:hover {
+      fill: #00C57E;
+    }
+  }
