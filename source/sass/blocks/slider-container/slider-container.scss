@@ -66,3 +66,7 @@
   transform: translateY(-50%);
   z-index: 1;
 }
+.slider-item:nth-child(2) {
+  @media (max-width: $mobile-width-only) {
+  }
+}
