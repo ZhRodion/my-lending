@@ -3,17 +3,25 @@
   height: 100%;
   padding: 30px 0 0;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 8px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   @media (min-width: $tablet) {
-    column-gap: 43px;
+    -webkit-column-gap: 43px;
+       -moz-column-gap: 43px;
+            column-gap: 43px;
     row-gap: 40px;
     padding: 60px 0 0;
   }
   @media (min-width: $desktop) {
-    flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 .portfolio-list__item {
@@ -48,7 +56,8 @@
   border-radius: 0 0 5px 5px;
   overflow: hidden;
   white-space: pre;
-  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 .portfolio-list__link {
   width: 100%;
@@ -59,13 +68,13 @@
   background-image: url('../../../img/portfolio/berry.png');
   background-repeat: no-repeat;
   background-size: cover;
-  @media (min-resolution: 2dppx) {
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
     background-image: url('../../../img/portfolio/retina/mobile/berry-2x-mob.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
   @media (min-width: $desktop) {
-    @media (min-resolution: 2dppx) {
+    @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
     background-image: url('../../../img/portfolio/retina/desktop/berry-2x-desk.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -76,13 +85,13 @@
   background-image: url('../../../img/portfolio/sedona-1.png');
   background-repeat: no-repeat;
   background-size: cover;
-  @media (min-resolution: 2dppx) {
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
     background-image: url('../../../img/portfolio/retina/mobile/sedona-1-2xmob.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
   @media (min-width: $desktop) {
-    @media (min-resolution: 2dppx) {
+    @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
       background-image: url('../../../img/portfolio/retina/desktop/sedona-1-2x-desk.png');
       background-repeat: no-repeat;
       background-size: cover;
@@ -93,13 +102,13 @@
   background-image: url('../../../img/portfolio/sedona2.png');
   background-repeat: no-repeat;
   background-size: cover;
-  @media (min-resolution: 2dppx) {
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
     background-image: url('../../../img/portfolio/retina/mobile/sedona-2-2xmob.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
   @media (min-width: $desktop) {
-    @media (min-resolution: 2dppx) {
+    @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
       background-image: url('../../../img/portfolio/retina/desktop/sedona2-2x-desk.png');
       background-repeat: no-repeat;
       background-size: cover;
