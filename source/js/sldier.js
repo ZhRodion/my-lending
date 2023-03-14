@@ -45,35 +45,4 @@ $(document).ready(function () {
   };
   sliderButtons();
 });
-// Функция проверки ширины экрана для адаптинвости
-// sliderButtonPrev.on('click', function () {
-//   if ($(window).width() <= 320) {
-//     sliderPosition += sliderItemWidth;
-//     if (sliderPosition > 0) {
-//       sliderPosition = 0;
-//     }
-//   } else {
-//     sliderPosition += sliderItemWidth;
-//     if (sliderPosition > sliderItemWidth) {
-//       sliderPosition = -sliderTrackWidth;
-//     }
-//   }
-//   sliderTrack.css('transform', `translateX(${sliderPosition}px`);
-//   sliderButtons();
-// });
 
-// sliderButtonNext.on('click', function () {
-//   if ($(window).width() <= 320) {
-//     sliderPosition -= sliderItemWidth;
-//     if (sliderPosition < -sliderTrackWidth) {
-//       sliderPosition = 0;
-//     }
-//   } else {
-//     sliderPosition -= sliderItemWidth;
-//     if (sliderPosition < -sliderTrackWidth + sliderItemWidth) {
-//       sliderPosition = 0;
-//     }
-//   }
-//   sliderTrack.css('transform', `translateX(${sliderPosition}px`);
-//   sliderButtons();
-// });
