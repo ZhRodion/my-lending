@@ -7,22 +7,22 @@
     background-image: url('../../../img/hero/hero-mob.png');
     background-repeat: no-repeat;
     background-position: 100% 100%;
-    @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
-    background-image: url('../../../img/hero/retina/hero2xmob.png');
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
-    }
+    // @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
+    // background-image: url('../../../img/hero/retina/hero2xmob.png');
+    // background-repeat: no-repeat;
+    // background-position: 100% 100%;
+    // }
   }
   @media (min-width: $tablet) {
-    padding: 70px 60px 0;
+    padding: 70px 55px 0;
     background-image: url('../../../img/hero/hero744.png');
     background-repeat: no-repeat;
     background-position: 95% 100%;
-    @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
-      background-image: url('../../../img/hero/retina/hero2xtabl.png');
-      background-repeat: no-repeat;
-      background-position: 100% 100%;
-      }
+    // @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
+    //   background-image: url('../../../img/hero/retina/hero2xtabl.png');
+    //   background-repeat: no-repeat;
+    //   background-position: 100% 100%;
+    //   }
   }
   @media (min-width: $desktop) {
     padding: 117px 0 0 135px;
@@ -30,11 +30,11 @@
     background-image: url('../../../img/hero/hero1440.png');
     background-repeat: no-repeat;
     background-position: 90% 100%;
-    @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
-      background-image: url('../../../img/hero/retina/hero2xdesk.png');
-      background-repeat: no-repeat;
-      background-position: 100% 100%;
-      }
+    // @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
+    //   background-image: url('../../../img/hero/retina/hero2xdesk.png');
+    //   background-repeat: no-repeat;
+    //   background-position: 100% 100%;
+    //   }
   }
   @media (min-width: $desktop-hight) {
     padding: 117px 0 0 310px;
@@ -200,10 +200,10 @@
     line-height: 21px;
   }
   &:hover {
-    opacity: 0.5;
+    color: #0a9a67;
   }
   &:active {
-    color: #0a9a67;
+    opacity: 0.5;
   }
 }
 .soc-media-info__description {
