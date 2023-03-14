@@ -5,7 +5,7 @@
     <title>my-portfolio</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
   </head>
   <body class="page">
     <!-- Хэдер -->
@@ -104,7 +104,8 @@
               </picture>
             </div>
             <h3 class="about-me__content-title">
-              Меня зовут Жердев Родион, я верстальщик.
+              Меня зовут Жердев Родион, <br class="mobile-trasfer" />
+              я верстальщик.
             </h3>
             <p class="about-me__subtitle">
               Вы можете написать мне в любое время, на почту или в соц сетях,и
@@ -375,7 +376,7 @@
           <!-- Сертификаты -->
           <h3 class="skills__heading" id="portfolio">Мои сертификаты</h3>
           <!-- Слайдер -->
-          <div class="slider-container">
+          <!-- <div class="slider-container">
             <div class="arrow-left">
               <div class="arrow-bg">
                 <div class="arrow"></div>
@@ -387,7 +388,7 @@
               </div>
             </div>
             <!-- лента с фотографиями -->
-            <div class="slider-track">
+          <!-- <div class="slider-track">
               <div class="slider-item">
                 <a href="./img/sert/sert1.png">
                   <picture>
@@ -430,7 +431,49 @@
                 </a>
               </div>
             </div>
-          </div>
+          </div> -->
+          <ul class="sertificat-list">
+            <li class="sertificat-list__item">
+              <a href="./img/sert/sert1.png" target="_blank">
+                <picture>
+                  <source
+                    srcset="./img/sert/sert1-desktop-standart.png"
+                    media="(min-width: 744px)"
+                  />
+                  <source
+                    srcset="./img/sert/mob/sert1mob.png"
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./img/sert/sert1-desktop-standart.png"
+                    alt="сертефикат о успешном окончании курса."
+                  />
+                </picture>
+              </a>
+            </li>
+            <li class="sertificat-list__item">
+              <a href="./img/sert/sert2.png" target="_blank">
+                <picture>
+                  <source
+                    srcset="./img/sert/sert2-desktop-standart.png"
+                    srcset="
+                      ./img/sert/retina/desktop/sert2-desktop-standart.png
+                    "
+                    media="(min-width: 744px)"
+                  />
+                  <source
+                    srcset="./img/sert/mob/sert2mob.png"
+                    srcset="./img/sert/retina/desktop/sert2-retina-mob.png"
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./img/sert/sert2-desktop-standart.png"
+                    alt="сертефикат о успешном окончании курса."
+                  />
+                </picture>
+              </a>
+            </li>
+          </ul>
         </section>
         <section class="portfolio">
           <h2 class="portfolio__title green-title section-title">Портфолио</h2>
@@ -590,6 +633,6 @@
       </a>
     </footer>
     <script src="./js/script.js" defer></script>
-    <script src="./js/sldier.js" defer></script>
+    <!-- <script src="./js/sldier.js" defer></script> -->
   </body>
 </html>
